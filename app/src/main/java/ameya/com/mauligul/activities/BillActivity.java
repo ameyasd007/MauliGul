@@ -37,7 +37,7 @@ import ameya.com.mauligul.database.models.Customer;
 import ameya.com.mauligul.database.models.Item;
 
 public class BillActivity extends AppCompatActivity {
-
+//    First Change
     private static final String TAG = "BillActivity";
     private DatabaseHelper databaseHelper;
     EditText editText;
