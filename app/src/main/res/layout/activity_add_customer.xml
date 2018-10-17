@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="ameya.com.mauligul.activities.AddingActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/customer_name"
+                android:layout_weight="1"
+                android:gravity="center|start"/>
+
+            <EditText
+                android:labelFor="@+id/customer_name"
+                android:id="@+id/customer_name"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/address"
+                android:layout_weight="1"
+                android:gravity="center|start"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:labelFor="@+id/address"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/shop_name"
+                android:layout_weight="1"
+                android:gravity="center|start"/>
+
+            <EditText
+                android:id="@+id/shop_name"
+                android:labelFor="@+id/shop_name"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/contact_no"
+                android:layout_weight="1"
+                android:gravity="center|start"/>
+
+            <EditText
+                android:id="@+id/contact_number"
+                android:labelFor="@+id/contact_number"
+                android:inputType="phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/amount_pending"
+                android:layout_weight="1"
+                android:gravity="center|start"/>
+
+            <EditText
+                android:id="@+id/amount_pending"
+                android:labelFor="@+id/amount_pending"
+                android:inputType="numberDecimal"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="saveCustomer"/>
+
+</LinearLayout>
